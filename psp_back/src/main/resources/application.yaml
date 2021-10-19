@@ -1,0 +1,33 @@
+#项目启动端口
+server:
+  port: 8080
+#数据源配置
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.17.75)(PORT = 1521))(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = orcl.bjgoodwill.com)))
+    password: JHICU_BYSY
+    username: JHICU_BYSY
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+# spring:
+#     datasource:
+#         # url: jdbc:oracle:thin:@192.168.17.75:1521:orcl.bjgoodwill.com
+#         driver-class-name: oracle.jdbc.driver.OracleDriver
+#         url: jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.17.75)(PORT = 1521))(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = orcl.bjgoodwill.com)))
+#         password: JHICU_BYSY
+#         username: JHICU_BYSY
+        # url: jdbc:mysql://localhost:3306/property_service_platform?serverTimezone=UTC&useSSL=false
+        # password: 123
+        # username: root
+        # driver-class-name: com.mysql.cj.jdbc.Driver
+#配置mybatis
+mybatis:
+    mapper-locations: classpath:com/example/psp_back/mapper/*.xml
+    configuration:
+        map-underscore-to-camel-case: true
+#sql语句日志打印
+# logging:
+#     level:
+#         com:
+#             example:
+#                 psp_back:
+#                     mapper: debug
