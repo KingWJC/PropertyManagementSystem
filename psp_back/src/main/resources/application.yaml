@@ -21,9 +21,9 @@ spring:
         # driver-class-name: com.mysql.cj.jdbc.Driver
 #配置mybatis
 mybatis:
-    mapper-locations: classpath:com/example/psp_back/mapper/*.xml
-    configuration:
-        map-underscore-to-camel-case: true
+  mapper-locations: classpath:com/example/psp_back/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
 #sql语句日志打印
 # logging:
 #     level:

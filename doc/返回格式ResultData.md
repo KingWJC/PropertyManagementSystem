@@ -85,7 +85,7 @@ public int error(){
 
 ### 定义返回对象
 
-```
+```java
 @Data
 public class ResultData<T> {
   /** 结果状态 ,具体状态码参见ResultData.java*/
@@ -120,7 +120,7 @@ public class ResultData<T> {
 
 ### 定义状态码
 
-```
+```java
 public enum ReturnCode {
     /**操作成功**/
     RC100(100,"操作成功"),
