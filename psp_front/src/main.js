@@ -1,3 +1,11 @@
+/*
+ * @Author: KingWJC
+ * @Date: 2021-10-18 16:21:24
+ * @LastEditors: KingWJC
+ * @LastEditTime: 2021-10-28 11:24:40
+ * @Descripttion: 
+ * @FilePath: \psp_front\src\main.js
+ */
 // with polyfills
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
@@ -11,7 +19,7 @@ import { FormModel } from 'ant-design-vue'
 
 // mock
 // WARNING: `mockjs` NOT SUPPORT `IE` PLEASE DO NOT USE IN `production` ENV.
-// import './mock'
+import './mock'
 
 import bootstrap from './core/bootstrap'
 import './core/lazy_use'

@@ -218,7 +218,7 @@ export default {
         nextStep() {
             // 获取表格中的数据
             const dataArray = this.data
-            // 拼接字符串
+            // 拼接字符串 或者使用对象传递
             var param = '['
             for (let i = 0; i < dataArray.length; i++) {
                 if (i !== dataArray.length - 1) {
